@@ -1,0 +1,223 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31-mar-2016, 12:43:28
+    Author     : carolina
+*/
+/* NAV */
+div#nav {
+    font-size: 0.9em;
+}
+* html div#nav {
+    /* hide ie/mac \*/
+    height: 1%;
+    /* end hide */
+}
+div#nav div.wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+div#nav ul {
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 0;
+
+    line-height: 1em;
+    list-style: none;
+
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #BF1E2D;
+
+    height: 30px;
+}
+div#nav li {
+    float: left;
+    display: inline;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    line-height: 2em;
+
+    /*border-right: 1px solid #aaa;*/
+
+}
+div#nav li.last {
+    border-right: none;
+}
+div#nav a,
+div#nav a:link,
+div#nav a:active,
+div#nav a:visited {
+    display: inline-block;
+    /* hide from ie/mac \*/
+    display: block;
+    /* end hide */
+
+    margin: 0;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    color: black;
+    /*background: #ddd;*/
+}
+div#nav a:hover {
+    text-decoration: none;
+    color: #BF1E2D;
+}
+div#nav strong {
+    display: inline-block;
+    /* hide from ie/mac \*/
+    display: block;
+    /* end hide */
+
+    color: white;
+    background: black;
+}
+div#nav strong a,
+div#nav strong a:link,
+div#nav strong a:active,
+div#nav strong a:visited,
+div#nav strong a:hover {
+    color: white;
+    background-color: black;
+}
+
+div#nav li {
+    padding-left: 33px; /*16 12*/
+    padding-right: 7px;
+}     
+
+#catCartSummary {
+    display: none;
+}
+/* END NAV */
+
+
+a.inicio {
+    display: block;
+    width: 46px;
+    height: 30px;
+    text-decoration: none;
+    background: url(../menu/inicio.png) no-repeat;
+}
+
+a.inicio:hover {
+    background-position: 0 -31px;
+}
+
+a.acercade {
+    display: block;
+    width: 79px;
+    height: 30px;
+    text-decoration: none;
+    background: url(../menu/acerca-de.png) no-repeat;
+}
+
+a.acercade:hover  {
+    background-position: 0 -31px;
+}
+
+a.productos {
+    display: block;
+    width: 114px;
+    height: 30px;
+    text-decoration: none;
+    background: url(../menu/compre_linea.png) no-repeat;
+}
+
+a.productos:hover  {
+    background-position: 0 -31px;
+}
+
+
+a.servicios {
+    display: block;
+    width: 114px;
+    height: 30px;
+    text-decoration: none;
+    background: url(../menu/serviciocliente.png) no-repeat;
+}
+
+a.servicios:hover  {
+    background-position: 0 -30px;
+}
+
+a.serviciocliente {
+    display: block;
+    width: 136px;
+    height: 30px;
+    text-decoration: none;
+    background: url(../menu/serviciocliente.png) no-repeat;
+}
+
+a.serviciocliente:hover  {
+    background-position: 0 -31px;
+}
+
+
+a.catalogo {
+    display: block;
+    width: 76px;
+    height: 30px;
+    text-decoration: none;
+    background: url(../menu/compre_linea.png) no-repeat;
+}
+
+a.catalogo:hover  {
+    background-position: 0 -31px;
+}	
+
+a.compra {
+    display: block;
+    width: 120px;
+    height: 30px;
+    text-decoration: none;
+    background: url(../menu/compre_linea.png) no-repeat;
+}
+
+a.compra:hover  {
+    background-position: 0 -31px;
+}	
+
+a.faq {
+    display: block;
+    width: 44px;
+    height: 30px;
+    text-decoration: none;
+    background: url(../menu/faqs.png) no-repeat;
+}
+
+a.faq:hover  {
+    background-position: 0 -31px;
+}
+
+
+a.contacto {
+    display: block;
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    background: url(../menu/contacto.png) no-repeat;
+}
+
+a.contacto:hover  {
+    background-position: 0 -31px;
+}
+
+
+
+.displace {
+    position: absolute;
+    left: -5000px;
+}

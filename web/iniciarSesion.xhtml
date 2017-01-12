@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <title>Pagina de Inicio</title>
+    </h:head>
+    <h:body>
+        <p:layout  fullPage="true">
+            <p:layoutUnit position="west" size="100" collapsible="true">
+                
+            </p:layoutUnit>
+            <p:layoutUnit position="center" size="100" resizable="true" closable="true" collapsible="true" >
+            <h:form id="formLogin">
+                <center><table>
+                    <tr>
+                        <td width="100" align="right" bgcolor="#FFFFFF"></td>
+                        <td><center><h4 style="font-family:raleway;font-size:22px">UNIVERSIDAD DE GUAYAQUIL.<br/>
+                                    FACULTAD DE INGENIERIA INDUSTRIAL.<br/>
+                                    LICENCIATURA EN SISTEMAS DE INFORMACION.</h4></center></td>  
+                    </tr>
+                </table></center>
+                <center><h2 style="font-family:algerian;font-size: 22px">Curriculum Vitae Online</h2></center>
+              
+                            <p:panel header="Integrantes:"  style="font-family:Monotype Corsiva;font-size:22px" >
+                                <table>
+                                    <tr>
+                                    <td>
+                                        *Gomez Choez Pedro Luis.<br/>
+                                        *Gomez Solis Dayanna Deyanira.<br/>
+                                        *Mero Anchundia Diana Guisela.<br/>
+                                        *Peñaherrera Polanco Cindy Andreina.<br/><br/>
+                                        Grupo "1" 6To Semestre.<br/>
+                                    </td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                    <td width="100" align="left" bgcolor="#FFFFFF" >
+                                        
+                                        <br/> 
+                                        <center><p:commandButton value="Ingrese al Sistema" update=":formlogin"
+                                                                 onclick="PF('dlg').show();"/></center>
+                                    </td>
+                                </tr>     
+                                </table>                                                          
+                            </p:panel>                                                                                        
+                </h:form>     
+                <p:growl id="growl" sticky="true" showDetail="true" life="3000" />
+                <p:messages autoUpdate="true" showDetail="true"/>
+                <p:dialog header="Login" widgetVar="dlg" resizable="true">  
+                    <h:form id="formlogin">
+                            <h:panelGrid columns="2" cellpadding="5">
+                                <h:outputLabel for="txtusuario" value="Usuario:" />
+                                <p:inputText id="txtusuario" value="#{LoginMB.cue.correoelectronico}" required="true"  />
+                                <h:outputLabel for="txtclave" value="Password:" />
+                                <p:password id="txtclave" value="#{LoginMB.cue.constrasena}" required="true" />
+                                <f:facet name="footer">
+                                    <center><p:commandButton icon="ui-icon-key" value="Iniciar Sesion" action="index?faces-redirect=true" oncomplete="handleLoginRequest(xhr, status, args)"/>
+                                    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                             
+                                           <p:link value="Registrase" /></center>
+                                </f:facet>               
+                            </h:panelGrid>
+                    </h:form>
+                </p:dialog>     
+            </p:layoutUnit>
+            <p:layoutUnit position="east" size="100" collapsible="true">
+            
+            </p:layoutUnit>
+        </p:layout>
+   	 <script type="text/javascript">
+ 			function handleLoginRequest(xhr, status, args) {
+        	if(args.validationFailed || !args.loggedIn) {
+            	jQuery('#formLogin').effect("shake", {times:5}, 100);
+        	}
+        		else {
+            	location.href=args.ruta; 
+       		}
+    	}
+	</script>
+
+
+    </h:body>
+</html>
+

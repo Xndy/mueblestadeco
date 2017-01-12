@@ -1,0 +1,55 @@
+.titulo{
+	
+
+	color: red;
+    font-family: "Times New Roman", Georgia, Serif;
+    font-weight: bold;
+     font-style: oblique;
+       text-align: center;
+    letter-spacing: 1px;
+	position: absolute;
+	 top: -135px; 
+	 left: -75px;	
+   right: -75px; 
+	 margin: 120px; 
+	 width: 450px;
+	 font-size: 46px;
+
+
+}
+
+.descripcion{
+	
+	color: black;
+    font-family: "Times New Roman", Georgia, Serif;
+    
+     font-style: normal;
+       text-align: justify;
+    letter-spacing: 1px;
+	position: absolute;
+	 top: -135px; 
+	 left: -105px;	
+   right: -75px; 
+	 margin: 120px; 
+	 width: 350px;
+	 font-size: 16px;
+
+}
+
+.correo{
+	
+	color: black;
+    font-family: "Times New Roman", Georgia, Serif;
+    
+     font-style: oblique;
+       text-align: center;
+    letter-spacing: 1px;
+	position: absolute;
+	 top: 162px; 
+	 left: -105px;	
+   right: -75px; 
+	 margin: 120px; 
+	 width: 350px;
+	 font-size: 18px;
+
+}
