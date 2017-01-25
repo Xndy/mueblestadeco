@@ -20,7 +20,7 @@ public class CorreoSessionBean {
     private String from = "andysanchezgonzalez1996@gmail.com";
     private boolean auth = true;
     private String username = "andysanchezgonzalez1996@gmail.com";
-    private String password = "andy123A";
+    private String password = "";
     private Protocol protocol = Protocol.SMTPS;
     private boolean debug = true;
 
